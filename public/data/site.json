@@ -23,5 +23,13 @@
   "featureConfirmation": {
     "source": "项目方在本次对话确认：全部功能都可以使用了",
     "videoIsRealScreenRecording": false
+  },
+  "developmentDiscovery": {
+    "url": "data/api-discovery.json",
+    "protocol": "api-v1",
+    "format": "JWS_COMPACT",
+    "environment": "development",
+    "production": false,
+    "publicKeyPurpose": "审计展示，客户端必须使用交接包预置的独立公钥，不得信任同源临时替换公钥"
   }
 }

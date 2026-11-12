@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kid": "tianyi-discovery-ed25519-1",
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "alg": "EdDSA",
+      "use": "sig",
+      "x": "Kuc204mH1i2T1T9o4eYdHrm5YxageXPx3zHCNRh1Zes"
+    }
+  ]
+}
