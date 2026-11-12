@@ -24,7 +24,7 @@ for (const dialog of [imageDialog, infoDialog]) { dialog.addEventListener('click
 function info(title, body) { $('#info-title').textContent = title; $('#info-body').textContent = body; if (!infoDialog.open) infoDialog.showModal(); }
 $('#info-close').addEventListener('click', () => infoDialog.close()); $('#info-ok').addEventListener('click', () => infoDialog.close());
 $('#privacy-button').addEventListener('click', () => info('隐私与素材说明', '本站不设置账号系统，不使用分析追踪或广告 Cookie。视频仅在点击播放后加载。\n\n本地 APK 校验只在浏览器内计算，不上传文件。GitHub Pages / Releases 的网络服务可能按其自身政策处理访问日志。\n\n视频与截图来自项目方提供的介绍材料，画面为功能示意，非实机录屏。软件功能已由项目方确认可用，具体设备兼容和版本信息以正式发布说明为准。'));
-async function copy(value, fallbackTitle) { try { if (!navigator.clipboard?.writeText) throw new Error(); await navigator.clipboard.writeText(value); toast('已复制'); } catch { info(fallbackTitle, '浏览器未开放自动复制，请长按复制：\n\n' + value); } }
+async function copy(value, fallbackTitle) { let deadline; toast('正在复制…'); try { if (!navigator.clipboard?.writeText) throw new Error(); await Promise.race([navigator.clipboard.writeText(value), new Promise((_, reject) => { deadline = setTimeout(() => reject(new Error('clipboard timeout')), 1500); })]); toast('已复制'); } catch { clearTimeout(toastTimer); toastNode.hidden = true; info(fallbackTitle, '浏览器未开放自动复制，请长按复制：\n\n' + value); } finally { clearTimeout(deadline); } }
 $('#copy-qq').addEventListener('click', () => copy('3256364096', '复制测试 QQ'));
 
 const video = $('#intro-video'); const cover = $('#video-cover'); const loading = $('#video-loading'); const videoError = $('#video-error'); let desiredTime = 0; let videoStarted = false;

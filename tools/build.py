@@ -19,5 +19,11 @@ from release_metadata import validate_release
 validate_release(r)
 if dist.exists():shutil.rmtree(dist)
 shutil.copytree(source,dist)
+# 脚本和样式使用内容摘要参数，避免手机继续使用旧部署缓存。
+index=dist/'index.html';html=index.read_text()
+for name in ['app.js','styles.css']:
+    fingerprint=hashlib.sha256((dist/name).read_bytes()).hexdigest()[:12]
+    html=html.replace('\"'+name+'\"','\"'+name+'?v='+fingerprint+'\"')
+index.write_text(html)
 files=[p for p in dist.rglob('*') if p.is_file()]
 print(json.dumps({'files':len(files),'total_bytes':sum(p.stat().st_size for p in files),'directory':'dist'},ensure_ascii=False))
