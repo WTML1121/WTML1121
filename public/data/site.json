@@ -1,0 +1,27 @@
+{
+  "name": "天依 MMD",
+  "repository": "WTML1121/WTML1121",
+  "homepage": "https://wtml1121.github.io/WTML1121/",
+  "developer": "歪头美啦",
+  "testContact": {
+    "type": "QQ",
+    "value": "3256364096",
+    "note": "天依MMD测试",
+    "source": "用户提供视频 00:24"
+  },
+  "integrations": {
+    "apiBaseUrl": null,
+    "accountUrl": null,
+    "statusUrl": null,
+    "enabled": false
+  },
+  "privacy": {
+    "analytics": false,
+    "cookies": false,
+    "localFileUpload": false
+  },
+  "featureConfirmation": {
+    "source": "项目方在本次对话确认：全部功能都可以使用了",
+    "videoIsRealScreenRecording": false
+  }
+}

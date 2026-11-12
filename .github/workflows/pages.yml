@@ -1,0 +1,33 @@
+name: 发布天依 MMD 官网
+on:
+  push:
+    branches: [main]
+    paths: ['public/**', 'tools/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 检出官网源码
+        uses: actions/checkout@v4
+      - name: 生成安全静态目录
+        run: python3 tools/build.py
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+      - name: 上传静态页面
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: 发布官网
+        id: deployment
+        uses: actions/deploy-pages@v4

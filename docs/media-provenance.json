@@ -1,0 +1,54 @@
+{
+  "source_sha256": "30b5c47c52eaabe7f2e709aeb318cff8b6d15ef770d75d43b4ce84b38a9452ed",
+  "source_bytes": 4341591,
+  "source_kind": "测试版功能示意，非实机录屏",
+  "duration_seconds": 27.005011,
+  "source_dimensions": [
+    480,
+    852
+  ],
+  "compressed_bytes": 798512,
+  "video": "assets/introduction.mp4",
+  "screenshots": [
+    {
+      "file": "assets/import.webp",
+      "time_seconds": 6.5,
+      "description": "用户介绍视频原帧，未生成或伪造界面"
+    },
+    {
+      "file": "assets/ensemble.webp",
+      "time_seconds": 9.5,
+      "description": "用户介绍视频原帧，未生成或伪造界面"
+    },
+    {
+      "file": "assets/natural.webp",
+      "time_seconds": 12.7,
+      "description": "用户介绍视频原帧，未生成或伪造界面"
+    },
+    {
+      "file": "assets/cinema.webp",
+      "time_seconds": 14,
+      "description": "用户介绍视频原帧，未生成或伪造界面"
+    },
+    {
+      "file": "assets/dream.webp",
+      "time_seconds": 15.1,
+      "description": "用户介绍视频原帧，未生成或伪造界面"
+    },
+    {
+      "file": "assets/ai.webp",
+      "time_seconds": 18,
+      "description": "用户介绍视频原帧，未生成或伪造界面"
+    },
+    {
+      "file": "assets/desktop.webp",
+      "time_seconds": 20.5,
+      "description": "用户介绍视频原帧，未生成或伪造界面"
+    },
+    {
+      "file": "assets/invite.webp",
+      "time_seconds": 24,
+      "description": "用户介绍视频原帧，未生成或伪造界面"
+    }
+  ]
+}
