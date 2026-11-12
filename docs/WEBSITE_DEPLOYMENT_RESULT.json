@@ -1,0 +1,136 @@
+{
+  "checked_at": "2026-11-12T18:42:01.307935+00:00",
+  "url": "https://wtml1121.github.io/WTML1121/",
+  "repository": "https://github.com/WTML1121/WTML1121",
+  "deployment_run": "https://github.com/WTML1121/WTML1121/actions/runs/43280358686",
+  "deployed_commit": "f9ac2c48ba4d89921d0c79698db30e6cf495049d",
+  "status": "success",
+  "static_resources": [
+    {
+      "path": "index.html",
+      "http": 200,
+      "bytes": 23841,
+      "sha256_match": true,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "styles.css",
+      "http": 200,
+      "bytes": 44747,
+      "sha256_match": true,
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "app.js",
+      "http": 200,
+      "bytes": 11101,
+      "sha256_match": true,
+      "content_type": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/import.webp",
+      "http": 200,
+      "bytes": 18524,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/ensemble.webp",
+      "http": 200,
+      "bytes": 20536,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/natural.webp",
+      "http": 200,
+      "bytes": 20238,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/cinema.webp",
+      "http": 200,
+      "bytes": 21456,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/dream.webp",
+      "http": 200,
+      "bytes": 19960,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/ai.webp",
+      "http": 200,
+      "bytes": 21224,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/desktop.webp",
+      "http": 200,
+      "bytes": 21110,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/invite.webp",
+      "http": 200,
+      "bytes": 27784,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/poster.webp",
+      "http": 200,
+      "bytes": 21456,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/logo.webp",
+      "http": 200,
+      "bytes": 5018,
+      "sha256_match": true,
+      "content_type": "image/webp"
+    },
+    {
+      "path": "assets/introduction.mp4",
+      "http": 200,
+      "bytes": 798512,
+      "sha256_match": true,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "assets/chapters.vtt",
+      "http": 200,
+      "bytes": 763,
+      "sha256_match": true,
+      "content_type": "text/vtt; charset=utf-8"
+    },
+    {
+      "path": "data/site.json",
+      "http": 200,
+      "bytes": 655,
+      "sha256_match": true,
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "path": "data/release.json",
+      "http": 200,
+      "bytes": 183,
+      "sha256_match": true,
+      "content_type": "application/json; charset=utf-8"
+    }
+  ],
+  "video_range": {
+    "http": 206,
+    "content_range": "bytes 0-1023/798512",
+    "bytes_read": 1024
+  },
+  "all_live_resources_match": true,
+  "release_published": false
+}

@@ -50,3 +50,13 @@
 未提供真实 APK，因此没有实际安装、APK 下载成功、真实文件校验或软件性能验收；发布门控和静态版本逻辑已检查。没有模拟 Release 冒充真发布。未做所有安卓浏览器/旧系统的真机兼容性测试。
 
 正式 GitHub Pages 的部署状态与 HTTPS 验收以 WEBSITE_DEPLOYMENT_RESULT.json 的最终记录为准。
+
+## 正式上线验收
+
+- GitHub Pages 已发布：<https://wtml1121.github.io/WTML1121/>，HTTPS 强制开启。
+- 发布运行：<https://github.com/WTML1121/WTML1121/actions/runs/43280358686>，状态 success；部署代码 f9ac2c48ba4d89921d0c79698db30e6cf495049d。
+- 正式 HTTPS 视频实际播放：readyState=4、paused=false、currentTime 持续推进、无媒体 error；章节 00:19 正常跳转。
+- 正式站点复制 QQ 返回“已复制”；受限剪贴板另外提供 1.5 秒超时后的手动复制提示。
+- 样式/脚本带内容摘要参数，避免手机继续使用旧部署缓存。
+- 正式资源逐一请求并与本地构建做 SHA256 比对；17 个实际服务资源全部 HTTP 200 且一致。MP4 Range 请求返回 206，Content-Range 为 bytes 0-1023/798512。
+- APK 未提供，未创建 Release、未模拟软件下载成功。

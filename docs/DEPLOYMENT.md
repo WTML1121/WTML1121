@@ -6,7 +6,7 @@
 
 GitHub Pages 仓库设置使用 GitHub Actions，`.github/workflows/pages.yml` 在 main 的官网内容变化或手动触发时执行：检出→Python 安全构建→上传 dist→Pages 发布。使用标准 ubuntu-latest 公共仓库托管，不开通付费服务。
 
-正式地址应以 GitHub Pages 实际返回值为准。此项目预期路径为 `https://wtml1121.github.io/WTML1121/`；项目名同用户名不等于用户站点专用仓库 `WTML1121.github.io`，所以保留 `/WTML1121/` 子路径。
+正式地址已由 GitHub Pages 返回并实际验收：`https://wtml1121.github.io/WTML1121/`；项目名同用户名不等于用户站点专用仓库 `WTML1121.github.io`，所以保留 `/WTML1121/` 子路径。
 
 ## 更新文字、截图和视频
 

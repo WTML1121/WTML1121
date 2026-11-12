@@ -2,7 +2,7 @@
 
 网站采用无框架依赖的静态 HTML / CSS / JavaScript，通过现有仓库 `WTML1121/WTML1121` 的 GitHub Pages 发布。仓库原 README 保留；本文件说明新增官网。
 
-计划地址（须以实际 Pages 发布结果为准）：https://wtml1121.github.io/WTML1121/
+已发布官网：https://wtml1121.github.io/WTML1121/
 
 ## 本地开发
 
